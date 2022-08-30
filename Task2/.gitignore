@@ -2,5 +2,6 @@
 ../venv/
 # Idea
 .idea/
+..idea/
 # Pytest
 __pycache__/

@@ -1,0 +1,8 @@
+08/30/2022, 14:37:39: .\source\1\444.txt is coppied to .\replica\1\444.txt
+08/30/2022, 14:37:39: .\source\1\555.txt is coppied to .\replica\1\555.txt
+08/30/2022, 14:37:39: .\source\1.txt is coppied to .\replica\1.txt
+08/30/2022, 14:37:39: .\source\2.txt is coppied to .\replica\2.txt
+08/30/2022, 14:37:39: .\source\3.txt is coppied to .\replica\3.txt
+08/30/2022, 14:37:39: .\source\4.json is coppied to .\replica\4.json
+08/30/2022, 14:37:39: .\replica\1\333.txt is deleted
+08/30/2022, 14:37:39: .\replica\2 is deleted

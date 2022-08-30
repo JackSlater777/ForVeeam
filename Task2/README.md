@@ -1,0 +1,14 @@
+This is readme file to the second task
+
+To provide folder paths, synchronization interval and log file path use the command line arguments.
+
+- first argument is the folder path;
+- second argument is the synchronization interval;
+- third argument is the log file path.
+
+For example, to run the program, paste into the command line:
+python copying_files.py 120 logs.txt
+where:
+- copying_files.py - main file
+- 120 - the synchronization interval (in minutes)
+- 

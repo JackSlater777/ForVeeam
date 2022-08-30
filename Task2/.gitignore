@@ -1,0 +1,6 @@
+# Venv
+../venv/
+# Idea
+.idea/
+# Pytest
+__pycache__/

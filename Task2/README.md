@@ -9,9 +9,9 @@ To provide folder paths, synchronization interval and log file path use the comm
 For example, to run the program, paste into the command line:
 
 cd <path_to_task2_folder>
-python copying_files.py 120 logs.txt
+python run.py 60 logs.txt
 
 where:
-- copying_files.py - main file
-- 120 - the synchronization interval (in minutes)
+- run.py - main file
+- 60 - the synchronization interval (in seconds)
 - logs.txt - log file

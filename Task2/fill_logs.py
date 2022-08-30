@@ -1,5 +1,3 @@
-import sys
-import os
 from datetime import datetime
 from command_arguments import receiving_command_arguments
 

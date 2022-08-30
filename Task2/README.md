@@ -9,6 +9,7 @@ To provide folder paths, synchronization interval and log file path use the comm
 For example, to run the program, paste into the command line:
 
 cd <path_to_task2_folder>
+
 python run.py 60 logs.txt
 
 where:

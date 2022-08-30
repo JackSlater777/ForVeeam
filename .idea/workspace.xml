@@ -28,18 +28,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "GitIgnore",
-      "JSON"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;GitIgnore&quot;,
+      &quot;JSON&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Иван\PycharmProjects\ForVeeam\Task2" />
@@ -47,7 +47,7 @@
       <recent name="C:\Users\Иван\PycharmProjects\ForVeeam\Task2\source" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.run_schedule">
+  <component name="RunManager" selected="Python.main">
     <configuration name="checking_log" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ForVeeam" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -155,7 +155,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.run_schedule" />
         <item itemvalue="Python.copying_files" />
         <item itemvalue="Python.checking_log" />
         <item itemvalue="Python.command_arguments" />

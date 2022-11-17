@@ -14,7 +14,7 @@ Requirements:
 
 
 ********************************************
-To provide folder paths, synchronization interval and log file path use the command line arguments.
+To provide main file path, synchronization interval and log file path use the command line arguments.
 
 - first argument is the main file name;
 - second argument is the synchronization interval;

@@ -24,9 +24,9 @@ For example, to run the program, paste into the command line:
 
 cd <path_to_task2_folder>
 
-python run.py 60 logs.txt
+python main.py 60 logs.txt
 
 where:
-- run.py - main file
+- main.py - main file
 - 60 - the synchronization interval (in seconds)
-- logs.txt - log file
+- logs.txt - file with the backup history

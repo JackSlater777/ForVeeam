@@ -1,7 +1,8 @@
-# Venv
 ../venv/
-# Idea
 .idea/
 ..idea/
-# Pytest
 __pycache__/
+.source/
+.replica/
+logs.txt
+

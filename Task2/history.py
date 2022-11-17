@@ -1,5 +1,5 @@
 from datetime import datetime
-# from pathlib import Path
+from pathlib import Path
 from settings import source_path, replica_path
 from command_arguments import get_command_arguments
 
@@ -16,7 +16,7 @@ class PlainFileChangelogStorage:
     def __init__(self, path: str):
         self.path = path
 
-    def save(self, s, r) -> None:
+    def save(self, s: Path, r: Path) -> None:
         """Вносим историю бэкапа в текстовый файл."""
         now = datetime.now()  # Сейчас
         date_time = now.strftime("%m/%d/%Y, %H:%M:%S")  # Конвертируем дату в нужный формат

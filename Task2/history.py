@@ -12,7 +12,7 @@ class ChangelogStorage:
 
 # class PlainFileChangelogStorage(ChangelogStorage):
 class PlainFileChangelogStorage:
-    """Сохраняем историю бэкапа в текстом файле."""
+    """Класс для текстового файла."""
     def __init__(self, path: str):
         self.path = path
 

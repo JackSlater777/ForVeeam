@@ -8,14 +8,18 @@ from command_arguments import get_command_arguments
 
 class ChangelogStorage:
     """Интерфейс для хранилища любого типа - сохраняем историю бэкапа."""
+    def __init__(self,  path: str):
+        self.path = path
+
     def save(self, s: Path, r: Path) -> None:
+        """Заглушка для типов хранилищ, которые еще не реализованы."""
         raise NotImplementedError
 
 
 class PlainFileChangelogStorage(ChangelogStorage):
     """Класс для текстового файла."""
     def __init__(self, path: str):
-        self.path = path
+        super().__init__(path)
 
     def save(self, s: Path, r: Path) -> None:
         """Вносим историю бэкапа в текстовый файл."""
@@ -28,8 +32,8 @@ class PlainFileChangelogStorage(ChangelogStorage):
 
 class JSONFileChangelogStorage(ChangelogStorage):
     """Класс для JSON файла."""
-    def __init__(self,  path: str):
-        self.path = path
+    def __init__(self, path: str):
+        super().__init__(path)
         # Сразу проверяем существование
         self.init_storage()
 

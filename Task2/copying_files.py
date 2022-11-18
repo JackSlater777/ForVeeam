@@ -9,10 +9,26 @@ class Folder:
     def __init__(self, path: Path):
         self.path = path
 
+
+class Source(Folder):
+    """Класс, описывающий папку источника."""
+    def __init__(self, path: Path):
+        super().__init__(path)
+        # Автоматом проверяем наличие источника
+        self.create_folder()
+
     def create_folder(self) -> None:
         """Метод создания папки - для источника."""
         if not os.path.exists(self.path):
             os.mkdir(self.path)
+
+
+class Replica(Folder):
+    """Класс, описывающий папку реплики."""
+    def __init__(self, path: Path):
+        super().__init__(path)
+        # Автоматом удаляем реплику
+        self.delete_folder()
 
     def delete_folder(self) -> None:
         """Метод удаления папки - для реплики перед копированием."""
@@ -20,13 +36,14 @@ class Folder:
             shutil.rmtree(self.path)
 
 
-if __name__ == '__main__':
-    # Создаем экземпляры источника и реплики
-    source = Folder(source_path)
-    replica = Folder(replica_path)
-    # Создаем папку источника
-    source.create_folder()
-    # Удаляем папку реплики - в ней не будет ничего лишнего
-    replica.delete_folder()
+def copying_process() -> None:
+    """Процесс копирования источника в реплику."""
+    # Создаем экземпляры
+    source = Source(source_path)
+    replica = Replica(replica_path)
     # Копируем папки
     shutil.copytree(source.path, replica.path)
+
+
+if __name__ == '__main__':
+    copying_process()

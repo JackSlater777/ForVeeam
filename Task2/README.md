@@ -30,3 +30,5 @@ where:
 - main.py - main file
 - 60 - the synchronization interval (in seconds)
 - logs.txt - file with the backup history
+
+Also check out the "setting.py" for more possibilities!

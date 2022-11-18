@@ -16,8 +16,9 @@ class CommandArguments(BaseModel):
         # Валидация по числовому значению цикла
         try:
             int(values["recycling_time"])
-        except ValueError:
+        except:
             print("Некорректное значение межциклового интервала!")
+            raise ValueError
         # Валидация по имени лог-файла
         if ".txt" not in values["logfile_name"]:
             print("Некорректное имя лог-файла!")

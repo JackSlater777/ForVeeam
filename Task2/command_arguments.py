@@ -4,8 +4,7 @@ from schemas import CommandArguments
 
 def get_command_arguments() -> CommandArguments:
     """Функция для валидации аргументов командной строки по датаклассу."""
-    n = len(sys.argv)
-    print("\nTotal arguments passed:", n)
+    print("\nTotal arguments passed:", len(sys.argv))
     # The command line arguments are:
     print(f'\nThe command line arguments are:{sys.argv}')
     # Arguments passed
@@ -30,4 +29,4 @@ def get_command_arguments() -> CommandArguments:
 
 
 if __name__ == '__main__':
-    command_arguments = get_command_arguments()
+    get_command_arguments()

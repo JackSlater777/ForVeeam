@@ -62,13 +62,13 @@ class JSONFileChangelogStorage(ChangelogStorage):
             return json.load(f)
 
 
-def check_and_convert_time():
+def check_and_convert_time() -> str:
     """Устанавливаем текущее время."""
     now = datetime.now()  # Сейчас
     return now.strftime("%m/%d/%Y, %H:%M:%S")  # Конвертируем дату в нужный формат
 
 
-def create_json_path():
+def create_json_path() -> str:
     """Заменяем txt на json в пути файла."""
     for i in range(len(get_command_arguments().logfile_name)):
         if get_command_arguments().logfile_name[i] == '.':
